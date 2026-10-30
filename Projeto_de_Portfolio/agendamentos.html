@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>2ª Projeto de portfólio</title>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Klyffton Santos"/>
+    <meta name="Keywords" content="portfólio, desenvolvimento, web"/>
+    <meta name="description" content="Meu portfólio de desenvolvimento web"/>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+    <header>
+        <img src="img/banner.jpg" alt="Banner do Site com nome Klyffton Santos e ao lado, 
+        a imagem dele sendo numa mesa no escritório digitando em notebook!" />
+    </header>
+    <nav>
+        <a class="a-menu" href="index.html">Sobre Mim</a>
+        <a class="a-menu" href="index.html#pag_02">Tecnologias</a>
+        <a class="a-menu" href="index.html#pag_03">Projetos</a>
+        <a class="a-menu" href="index.html#pag_04">Jornada</a>
+        <a class="a-menu" href="#">Fale Comigo</a>
+    </nav>
+       
+    <section id="pag-appointments">
+        <h1>Agendamentos</h1>
+    
+        <p>Vamos conversar sobre tecnologia, projetos ou parcerias?</p>
+
+        <form method="method" action="">
+            
+            <label for="Nome">Nome:</label>
+            <input type="text" id="Nome" name="Nome" required placeholder="Digite seu nome completo">
+
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" required placeholder="Digite seu email">
+
+            <label for="Telefone">Telefone:</label>
+            <input type="tel" id="Telefone" name="Telefone" required placeholder="Digite seu telefone">
+
+            <div id="data-hota">
+                <div>
+                    <label for="Data">Data:</label>
+                    <input type="date" id="Data" name="Data" required>
+                </div>
+                <div>
+                    <label for="Hora">Hora:</label>
+                    <input type="time" id="Hora" name="Hora" required>
+                </div>
+                <div style="flex: 1.5; min-width: 110px;">
+                    <label for="duracao">Duração (min):</label>
+                    <input type="number" id="duracao" name="duracao" min="30" max="120" value="60" step="30" required style="text-align: center;">  
+                </div>
+            </div>
+
+            <label for="nivel">Motivo do Contato:</label>
+            <select id="nivel" name="nivel" required>  
+                <option value="">Selecione</option>
+                <option value="duvida">Dúvida</option>
+                <option value="proposta">Proposta de Projeto</option>
+                <option value="parceria">Parceria</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <fieldset>
+                <legend>Gênero:</legend>
+                <input id="masculino" type="radio" name="genero" value="masculino"/> <label for="masculino">Masculino</label><br>
+                <input id="feminino" type="radio" name="genero" value="feminino"/> <label for="feminino">Feminino</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interesses:</legend>
+                <input id="web" type="checkbox" name="interesses" value="web"/> <label for="web">Web</label><br>
+                <input id="rede" type="checkbox" name="interesses" value="rede"/> <label for="rede">Rede</label><br>
+                <input id="seguranca" type="checkbox" name="interesses" value="seguranca"/> <label for="seguranca">Segurança</label><br>
+                <input id="inteligencia-artificial" type="checkbox" name="interesses" value="inteligencia-artificial"/> <label for="inteligencia-artificial">Inteligência Artificial</label><br>
+                <input id="outros" type="checkbox" name="interesses" value="outros"/> <label for="outros">Outros</label><br>
+            </fieldset>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="6" cols="52"></textarea>
+
+            <div id="buttons-form">
+                <input type="submit" value="Agendar" name="btn-agendar">
+                <input type="reset" value="Limpar" name="btn-limpar">
+            </div>
+        </form>
+    </section>
+
+<footer>
+        <p> Desenvolvido por <a href="https://www.linkedin.com/in/klyffton-santos" target="_blank"> Klyffton Santos </a> 2026 </p>
+    </footer>
+</body>
+</html>
